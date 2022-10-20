@@ -1,0 +1,49 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+del {
+    background-color: red;
+}
+
+.status-bar-item.plugin-obsidian-openai-plugin {
+    color: yellow;
+}
+
+ins {
+    background-color: green;
+}
+
+.text-diff-container {
+    display: flex;
+}
+
+.slider-input {
+    width: 60px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.text-diff-original {
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+.text-diff-original:hover{
+    background-color: #ffffff3d;
+}
+
+.text-diff-improved {
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.text-diff-improved:hover{
+    background-color: #ffffff3d;
+}

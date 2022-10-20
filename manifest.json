@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-openai-plugin",
+	"name": "OpenAI",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "This plugins provides several new commands to use OpenAI prompts within Obisidian",
+	"author": "Luc Raeskin",
+	"authorUrl": "https://github.com/lucraeskin",
+	"isDesktopOnly": false
+}
