@@ -8,7 +8,7 @@ export class OpenAICommands {
 
     constructor(settings: OpenAiSettings) {
         const configuration = new Configuration({
-            apiKey: settings.openAPIKey,
+            apiKey: settings.openAIKey,
         });
         this.settings = settings;
         this.openai = new OpenAIApi(configuration);

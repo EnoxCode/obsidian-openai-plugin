@@ -22,9 +22,9 @@ export class SampleSettingTab extends PluginSettingTab {
 			.setDesc('It\'s a secret')
 			.addText(text => text
 				.setPlaceholder('Enter your OPEN KEY')
-				.setValue(this.plugin.settings.openAPIKey)
+				.setValue(this.plugin.settings.openAIKey)
 				.onChange(async (value) => {
-					this.plugin.settings.openAPIKey = value;
+					this.plugin.settings.openAIKey = value;
 					await this.plugin.saveSettings();
 				}).inputEl.setAttribute("type", "password"));
 		/**

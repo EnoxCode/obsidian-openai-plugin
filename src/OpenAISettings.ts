@@ -1,5 +1,5 @@
 export interface OpenAiSettings {
-	openAPIKey: string;
+	openAIKey: string;
 	summary: {
 		prompt: string,
 		tokens: number,

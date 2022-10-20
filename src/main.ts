@@ -7,7 +7,7 @@ import { ImproveModal } from 'src/improveModal';
 import { PromptModal } from 'src/advancedPromptModal';
 
 const DEFAULT_SETTINGS: OpenAiSettings = {
-	openAPIKey: '',
+	openAIKey: '',
 	improvePrompt: "Improve my text and fix spelling mistakes",
 	summary: {
 		prompt: "Summary the following text:",
@@ -21,6 +21,7 @@ export default class OpenAPIPlugin extends Plugin {
 	private openAICommands: OpenAICommands;
 
 	async onload() {
+		console.log("Loading OpenAI Plugin");
 		await this.loadSettings();
 
 		this.openAICommands = new OpenAICommands(this.settings);
@@ -52,6 +53,8 @@ export default class OpenAPIPlugin extends Plugin {
 				const file = view.file;				
 				const metadata = this.app.metadataCache.getFileCache(file);
 
+				console.log("summuary");
+				
 				if (metadata?.frontmatter && 'summary' in metadata?.frontmatter) {
 					const fileContent = await this.app.vault.cachedRead(file);
 					const {position: {start, end}} = metadata.frontmatter;
